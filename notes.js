@@ -80,5 +80,12 @@
    * 
    * Seeds => 001-favApps.js
 
+13. Refactored: apps.spec.js
+   * Apps.addApp > 
+         Describe: is able to add apps to the db: PASS
+
+
+
+
 */
 
