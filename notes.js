@@ -77,6 +77,8 @@
 12. Create Database 
    * Knex migrations
    * Table now appears in database
+   * 
+   * Seeds => 001-favApps.js
 
 */
 
