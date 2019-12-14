@@ -2,18 +2,27 @@
 
 //////////////////////////////////////////////////////////
 
-// What will be the resource?
-   // ***   List of Apps   *** 
-      // Name:    +     Description: 
+/*  What will be the resource?  A list of apps.
+   Name:    +     Description:  
+       
+*/
 
    
-   // ***   MVP:  ***
-       // 2 tests per route, written before production code
+/*     ***   MVP:  ***
+      2 tests per route, written before production code
 
-      // Route Handlers - GET  | CREATE  | DELETE
+      Route Handlers - GET  | CREATE  | DELETE
 
-      // Storage? Token. 
+      Storage? Token. 
 
-      // Database? Nah. maybe later. 
+      Database? Nah. maybe later.  */
 
 //////////////////////////////////////////////////////////
+
+
+/* Documentation of my Process for this
+
+
+
+*/
+
