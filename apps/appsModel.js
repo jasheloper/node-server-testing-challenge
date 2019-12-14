@@ -1,23 +1,37 @@
 const db = require("../data/dbConfig.js");
 
 module.exports = {
-  insert,
-  destroy,
-  readAll
+ readAll,
+ readAllById,
+ insert,
+ destry
 };
-
-async function insert(app) {
-  const [id] = await db("apps").insert(app);
-
-  return db("apps")
-    .where({ id })
-    .first();
-}
-
-function destroy(id) {
-  return null;
-}
 
 function readAll() {
   return db("apps");
 }
+
+
+function readAllById(id) {
+  return db('apps').where({id}).first();
+}
+
+
+function insert(app) {
+  return db('apps').insert(app)
+         .then(ids => {
+             const [id] = ids;
+             return readAllById(id)
+         }) 
+}
+
+
+function destroy(id) {
+    return db('apps').where('id', id).del()
+            .then(count => {
+                return db('apps');
+            })
+            .then(app => {
+                return app
+            })
+
