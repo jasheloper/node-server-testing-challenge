@@ -74,5 +74,9 @@
 
 11. npm install supertest --save-dev
 
+12. Create Database 
+   * Knex migrations
+   * Table now appears in database
+
 */
 
