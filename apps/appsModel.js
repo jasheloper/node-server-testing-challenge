@@ -6,7 +6,7 @@ module.exports = {
   readAll
 };
 
-async function create(apps) {
+async function create(app) {
   const [id] = await db("apps").create(app);
 
   return db("apps")
