@@ -8,7 +8,7 @@ const Apps = require("./appsModel");
 
 // clean up
 beforeEach(async () => {
-  await db("apps").truncute();
+  await db("apps").truncate();
 });
 
 

@@ -6,8 +6,12 @@ module.exports = {
   readAll
 };
 
-async function create(hobbit) {
-   return null;
+async function create(apps) {
+  const [id] = await db("apps").create(app);
+
+  return db("apps")
+    .where({ id })
+    .first();
 }
 
 function destroy(id) {
@@ -15,5 +19,5 @@ function destroy(id) {
 }
 
 function readAll() {
-   return null;
+  return db("apps");
 }
