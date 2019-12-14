@@ -1,1 +1,12 @@
-// i forked it
+// * NOTES *PLANNING *THOUGHTS
+
+//////////////////////////////////////////////////////////
+
+// What will be the resource?
+   // List of Apps -
+   
+      // Name:    +     Description: 
+
+      // Route Handlers - CREATE    &&    DELETE
+
+//////////////////////////////////////////////////////////
