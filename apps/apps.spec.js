@@ -17,7 +17,7 @@ beforeEach(async () => {
 ////////////////////////   first describe /////////////////////////////////////////
 
 describe("Apps.create works", () => {
-            // TEST #1  :
+    /////////// TEST 1 //////////////
   it(" is able to add apps to the db   ", async () => {
     // sanity check : checking that truncate works
     let apps = await apps.getAll();
@@ -32,7 +32,7 @@ describe("Apps.create works", () => {
     expect(apps).toHaveLength(2);
   });
 
-               // TEST #2  :
+    /////////// TEST 2 //////////////
   it("is able to create the correct apps", async () => {
     // sanity: check that truncate works
     let apps = await Apps.getAll();
@@ -53,7 +53,7 @@ describe("Apps.create works", () => {
 
 
 describe("Apps.delete works", () => {
-            // TEST #1
+ /////////// TEST 1 //////////////
   it("able to delete apps", async () => {
     let apps = await apps.getAll();
     expect(apps).toHaveLength(0);
@@ -67,7 +67,7 @@ describe("Apps.delete works", () => {
     expect(apps).toHaveLength(2);
   });
 
-            // TEST #2
+   /////////// TEST 2 //////////////
   it("able to delete correct apps", async () => {
     let apps = await Apps.getAll();
     expect(apps).toHaveLength(0);

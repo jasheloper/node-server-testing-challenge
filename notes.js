@@ -30,17 +30,30 @@
 
 1. Write the tests.
 
-   * Lecture Review:    https://youtu.be/zgrceUO_2z8?t=1186
-   *  Create a folder for tests > [touch] apps.test.js  
+   *  Lecture Review:    https://youtu.be/zgrceUO_2z8?t=1186
+   *  Create apps folder > touch apps.spec.js
 
+      * Describe Block 1: Apps.create work ?
+         * Test 1:  is able to add apps to the db
+         * Test 2:  is able to create the correct apps
    
-   * Describe Block 1: Apps.create work
-      * Test 1:  is able to add apps to the db
-      * Test 2:  is able to create the correct apps
-   
-   * Describe Block 1: Apps.create work
-      * Test 1:  is able to delete apps to the db
-      * Test 2:  is able to delete the correct apps
+      * Describe Block 1: Apps.delete work ?
+         * Test 1:  is able to delete apps to the db
+         * Test 2:  is able to delete the correct apps
+
+2. Add DB Config :
+   * touch dbConfig.js
+
+3. Knex:
+   > npm install knex
+
+4. SQL:
+   > npm install sqlite3 --save
+
+5. Create a model for Apps 
+   * mkdir > apps 
+   * touch appsModel.js
+
 
 
 
