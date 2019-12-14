@@ -1,12 +1,19 @@
-// * NOTES *PLANNING *THOUGHTS
+// *** NOTES , PLANNING , THOUGHTS  ***
 
 //////////////////////////////////////////////////////////
 
 // What will be the resource?
-   // List of Apps -
-   
+   // ***   List of Apps   *** 
       // Name:    +     Description: 
 
-      // Route Handlers - CREATE    &&    DELETE
+   
+   // ***   MVP:  ***
+       // 2 tests per route, written before production code
+
+      // Route Handlers - GET  | CREATE  | DELETE
+
+      // Storage? Token. 
+
+      // Database? Nah. maybe later. 
 
 //////////////////////////////////////////////////////////
