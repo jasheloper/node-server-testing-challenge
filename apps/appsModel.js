@@ -1,13 +1,13 @@
 const db = require("../data/dbConfig.js");
 
 module.exports = {
-  create,
+  insert,
   destroy,
   readAll
 };
 
-async function create(app) {
-  const [id] = await db("apps").create(app);
+async function insert(app) {
+  const [id] = await db("apps").insert(app);
 
   return db("apps")
     .where({ id })
