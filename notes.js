@@ -31,7 +31,7 @@
 1. Write the tests.
 
    *  Lecture Review:    https://youtu.be/zgrceUO_2z8?t=1186
-   *  Create apps folder > touch apps.spec.js
+   *  Create apps folder > then,  touch apps.spec.js
 
       * Describe Block 1: Apps.create work ?
          * Test 1:  is able to add apps to the db
@@ -51,27 +51,28 @@
    > npm install sqlite3 --save
 
 5. Create a model for Apps 
-   > apps 
+   > apps folder
     * touch appsModel.js
 
 6. Touch:
    * index.js
-
+   Then, 
    mkdir api > touch server.js
 
 7. install: yarn 
 
 8. package.json scripts ~
-   "server": "nodemon index.js",
+    "server": "nodemon index.js",
     "test": "cross-env DB_ENV=testing jest --watch --verbose",
     "start": "node index.js"
 
-9. Dependency:
+9. Dependencies
   * npm install --save-dev cross-env
   * npm install dotenv
 
 10. ///// HURRAY SERVER IS UP AND RUNNING //// 
 
+11. npm install supertest --save-dev
 
 */
 
