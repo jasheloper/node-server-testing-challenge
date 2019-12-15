@@ -7,7 +7,7 @@ const db = require("../data/dbConfig");
 const Apps = require("./appsModel.js");
 
 // describe 1
-describe("Apps.insert", () => {
+describe("Apps -insert ", () => {
   it("is able to add apps to the db", async () => {
     await db("apps").truncate();
 
@@ -34,3 +34,21 @@ describe("Apps.insert", () => {
     expect(newApp2.name).toBe("Notes");
   });
 });
+
+
+// Test for the readAll
+ describe("readAll", () => {
+
+ })
+
+
+ // Test for the readAllById
+ describe("readAllById", () => {
+
+})
+
+
+ // Test for the destroy (delete)
+describe("destroy", () => {
+
+})

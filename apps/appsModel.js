@@ -34,4 +34,4 @@ function destroy(id) {
             .then(app => {
                 return app
             })
-
+          }
