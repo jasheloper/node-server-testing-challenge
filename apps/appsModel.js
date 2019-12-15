@@ -1,18 +1,18 @@
 const db = require("../data/dbConfig.js");
 
 module.exports = {
- readAll,
- readAllById,
+ find,
+ findById,
  insert,
- destry
+ destroy
 };
 
-function readAll() {
+function find() {
   return db("apps");
 }
 
 
-function readAllById(id) {
+function findById(id) {
   return db('apps').where({id}).first();
 }
 
@@ -21,7 +21,7 @@ function insert(app) {
   return db('apps').insert(app)
          .then(ids => {
              const [id] = ids;
-             return readAllById(id)
+             return findById(id)
          }) 
 }
 

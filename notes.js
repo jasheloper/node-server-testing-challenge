@@ -84,14 +84,14 @@
    * Apps.insert > 
          Describe: is able to add apps to the db: PASS
 
-   *Apps.readAll
-         Describe:
+   *Apps.find >
+         Describe: Apps -find : PASS
 
-   *Apps.readAllById
-         Describe:
-         
-   *Apps.destroy
-         Describe:
+   *Apps.findById >
+         Describe: Apps -findById : PASS
+
+   *Apps.destroy >
+         Describe: Apps -destroy : PASS
 
 
 

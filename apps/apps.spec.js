@@ -6,6 +6,7 @@ const db = require("../data/dbConfig");
 // require apps
 const Apps = require("./appsModel.js");
 
+
 // describe 1
 describe("Apps -insert ", () => {
   it("is able to add apps to the db", async () => {
@@ -36,19 +37,30 @@ describe("Apps -insert ", () => {
 });
 
 
-// Test for the readAll
- describe("readAll", () => {
+// Test for the find
+ describe("Apps -find", () => {
+  it('find all apps', async () => {
+    const apps = await Apps.find()
 
+    expect(apps).toHaveLength(2)
+  })
  })
 
 
- // Test for the readAllById
- describe("readAllById", () => {
+ // Test for the findById
+ describe("Apps -findById", () => {
+ it('find app by id', async () => {
+    const app = await Apps.findById(1)
 
+    expect(app.name).toBe('Photoshop')
+  })
 })
 
 
  // Test for the destroy (delete)
-describe("destroy", () => {
-
+describe("Apps -destroy", () => {
+  it('destroy an app', async () => {
+    const appList = await Apps.destroy(1)
+    expect(appList).toHaveLength(1)
+  })
 })
