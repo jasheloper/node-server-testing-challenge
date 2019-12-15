@@ -94,6 +94,9 @@
          Describe: Apps -destroy : PASS
 
 
+14. api > touch server.spec.js
+   * Added server tests
+
 
 */
 
